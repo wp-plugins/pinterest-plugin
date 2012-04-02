@@ -1,0 +1,20 @@
+.sn_pin {display:block; width:65px; height:40px; background:url('sn_pinterest.png'); z-index:999; margin:0 0 -50px 10px; position:relative; float:left;}
+.sn_pinterest .sn_pin {display:none}
+.sn_pinterest:hover .sn_pin {display:block;}
+input.pin
+{ 
+    -webkit-border-radius: 5px; 
+    -moz-border-radius: 5px; 
+    border-radius: 5px; 
+    font-size: 18px;
+    width: 350px;
+    padding-top: 6px;
+    padding-right: 12px;
+    padding-bottom: 6px;
+    padding-left: 12px;
+    box-shadow: inset 0 1px 1px rgba(34,29,29,0.1); -moz-box-shadow: inset 0 1px 1px rgba(34,29,29,0.1); -webkit-box-shadow: inset 0 1px 1px rgba(34,29,29,0.1);
+}
+
+.style1 {font-size: 12px}
+.style3 {font-size: 10px}
+.style2 {color: #DE4049}
