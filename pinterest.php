@@ -2,7 +2,8 @@
     /*
     Plugin Name: Pinterest Plugin
     Description: Display a Pinterest "Pin It" button on top of your images, only when people move their mouse over the image.
-    Version: 1.0| By <a title="Visit SuccessNexus" href="http://www.WordPressPinterestPlugin.com">SuccessNexus.com</a> | <a title="Visit plugin site" href="http://www.WordPressPinterestPlugin.com">Visit plugin site</a>
+    Version: 1.0 
+    By <a title="Visit SuccessNexus" href="http://www.WordPressPinterestPlugin.com">SuccessNexus.com</a> | <a title="Visit plugin site" href="http://www.WordPressPinterestPlugin.com">Visit plugin site</a>
     /*============================================================================================================ */    
     function sn_activate() {
         global $wpdb;
@@ -112,8 +113,8 @@
         }
     }    
     function menu()
-    {
-        add_menu_page('Dashboard', 'Pinterest Plugin', 'administrator','pinterestsn','overview');    
+    {        
+        add_options_page('Dashboard', 'Pinterest Plugin', 'manage_options', 'pinterestsn','overview');            
     }               
     function overview()
     {
@@ -158,7 +159,7 @@
                 else
                 {
                 ?>
-                <tr><td><input type="checkbox" name="connect"></td><td>Connect to Success nexus(optional)</td></tr>                    
+                <tr><td><input type="checkbox" name="connect"></td><td>Connect to Successnexus(optional)</td></tr>                    
                 <?    
                 }
             ?>            
