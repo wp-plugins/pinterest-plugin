@@ -148,7 +148,7 @@
             }     
         }        
     ?>
-    <h2>Connect Pinterest to Success Nexus</h2>
+    <h2>Connect Pinterest to <a href="http://SuccessNexus.com" target="_blank">SuccessNexus.com</a></h2>
     <form method="post" action="">
         <table>
             <?php
@@ -165,7 +165,7 @@
                 <?    
                 }
             ?>            
-            <tr><td><input type="submit" value="Connect"></td></tr>                    
+            <tr><td><input type="submit" value="Submit"></td></tr>                    
         </table>               
     </form>
     <p>If you use <a href="http://SuccessNexus.com">SuccessNexus.com's affiliate management software</a> to empower your readers to promote you, then you may want to activate this option.</p>
@@ -173,7 +173,7 @@
     <p>Once activated, whenever your readers click on the "Pin it" button, it will ask for their email address before it pins the image to their Pinterest board. It will hyperlink the pinned image to their affiliate URL. So that when their referrals buy from you, they earn a commission.</p>
 
     <p>Note: for this functionality to work, you should already have activated the SuccessNexus.com WordPress plugin. Or manually copy-pasted the SuccessNexus.com javascript tracking code to your theme.</p>
-    <p><a href="http://successnexus.com/buy-us-a-beer/" target="_blank"><img src="<?php echo plugins_url( 'icon_beer.gif', __FILE__ )?>" alt=""></a> This plugin is beerware. Please buy us a beer and support this plugin.
+    <p><a href="http://successnexus.com/buy-us-a-beer/" target="_blank"><img src="<?php echo plugins_url( 'icon_beer.gif', __FILE__ )?>" alt=""></a> This plugin is beerware. Please <a href="http://successnexus.com/buy-us-a-beer/" target="_blank">buy us a beer</a> and support this plugin.
         (Suggested: $3 a beer or $7.5 for a pitcher)</p>
     <?    
     }    
