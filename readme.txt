@@ -38,7 +38,7 @@ You may also want to read:
 Initial release.
 
 == Screenshots ==
-1. This screen shot shows the Pin it button over the image '/trunk/wordpresspinterestplugin.png'
+1. This screen shot shows the Pin it button over the image
 
 == Upgrade Notice ==
 none
