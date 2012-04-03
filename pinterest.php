@@ -1,9 +1,11 @@
 <?php
     /*
     Plugin Name: Pinterest Plugin
+    Plugin URI: http://www.WordPressPinterestPlugin.com
     Description: Display a Pinterest "Pin It" button on top of your images, only when people move their mouse over the image.
     Version: 1.0 
-    By <a title="Visit SuccessNexus" href="http://www.WordPressPinterestPlugin.com">SuccessNexus.com</a> | <a title="Visit plugin site" href="http://www.WordPressPinterestPlugin.com">Visit plugin site</a>
+    Author: SuccessNexus.com
+    Author URI: http://www.WordPressPinterestPlugin.com    
     /*============================================================================================================ */    
     function sn_activate() {
         global $wpdb;
