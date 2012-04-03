@@ -9,17 +9,17 @@ Stable tag: trunk
 Show the Pinterest "Pin It" button on top of your images, only when people move their mouse over the image.
 
 == Description ==
-Pinterest sends more traffic than Youtube, Linkedin, Google+, Reddit and other social websites. This plugin makes it very easy for your readers to pin your images to their Pinterest boards.
-
 This plugin doesn't display the Pinterest "Pin It" button underneath your blog post like a few other plugins out there. Instead it shows the "Pin It" button on top of the image itself, when your readers move their mouse over the image. This makes it easier for your readers to select exactly which image they want to pin.
 
 The plugin also sends your image alt text to Pinterest as default 'Description.'
 
-=Optional Settings=
+Pinterest sends more traffic than Youtube, Linkedin, Google+, Reddit and other social websites. That is why, if you want to attract traffic from Pinterest, you should install this plugin to your blog.
+
+**Optional Settings**
 
 The plugin has an optional advanced setting. If you use the [SuccessNexus.com affiliate program for your blog](http://SuccessNexus.com), your readers can pin your images to their boards with their affiliate links. By providing an incentive to your readers to pin your images, the frequency at which they pin the images will rise.
 
-=Links=
+**Links**
 
 You may also want to read:
 
@@ -38,7 +38,7 @@ You may also want to read:
 Initial release.
 
 == Screenshots ==
-1. This screen shot shows the Pin it button over the image `/trunk/wordpresspinterestplugin.png` (or jpg, jpeg, gif)
+1. This screen shot shows the Pin it button over the image '/trunk/wordpresspinterestplugin.png'
 
 == Upgrade Notice ==
 none
