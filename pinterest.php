@@ -110,7 +110,7 @@
                     $replacement=$pindiv.$pinurl.$pinfinish.$img_tag."</div>".$pinend;
                     $content=str_replace($img_tag,$replacement,$content);                    
                 }                                
-            }            
+            }                                                                 
             return $content;
         }
     }    
@@ -196,11 +196,22 @@
     }
     $successnexus = new pin_success;
     add_action('admin_menu', 'menu');                 
-    add_action('wp_dashboard_setup', 'sn_add_dashboard_widgets');                                                         
+    add_action('wp_dashboard_setup', 'sn_add_dashboard_widgets');                                                             
     wp_enqueue_script( 'pn_fancy', plugins_url( 'jquery.js', __FILE__ ));    
-    wp_enqueue_script( 'pn_fancybox', plugins_url( 'fancybox.js', __FILE__ ));
-    wp_enqueue_script( 'pn_fancy_mousewheel', plugins_url( 'mousewheel.js', __FILE__ ));
-    wp_enqueue_script( 'pn_sn', plugins_url( 'snpin.js', __FILE__ ));
-    wp_enqueue_style('pn_fancy_css', plugins_url( 'fancybox.css', __FILE__ ));
+    add_action('init','jsregister');
+    function jsregister()
+    {
+        wp_register_script( 'fb', WP_PLUGIN_URL.'/pinterest-plugin/fancybox/jquery.fancybox-1.3.4.pack.js','jquery', false );
+
+        wp_enqueue_script( 'fb' );
+
+        wp_register_script( 'fbe', WP_PLUGIN_URL.'/pinterest-plugin/fancybox/jquery.easing-1.3.pack.js','jquery', false );
+
+        wp_enqueue_script( 'fbe' );
+
+        wp_register_style('fbs', WP_PLUGIN_URL.'/pinterest-plugin/fancybox/jquery.fancybox-1.3.4.css');
+        wp_enqueue_style( 'fbs');
+    }
+    wp_enqueue_script( 'pn_sn', plugins_url( 'snpin.js', __FILE__ ));    
     wp_enqueue_style('sn_pinterest', plugins_url('sn_pinterest.css', __FILE__ ));
 ?>

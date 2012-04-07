@@ -1,6 +1,6 @@
 function show(nos)
 {    
-    id="#"+nos;
+    id="#"+nos;    
     $.fancybox({
         'autoScale': true,
         'transitionIn': 'elastic',
@@ -9,7 +9,7 @@ function show(nos)
         'speedOut': 300,
         'autoDimensions': true,
         'centerOnScroll': true,
-        'href' : id
+        'href':id
     });
 }
 function pinit(nos)
