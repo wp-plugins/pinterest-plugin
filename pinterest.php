@@ -4,7 +4,7 @@
     Plugin URI: http://www.WordPressPinterestPlugin.com
     Description: Display a Pinterest "Pin It" button on top of your images, only when people move their mouse over the image.
     Version: 1.0 
-    Author: SuccessNexus.com
+    Author: Promotioner.com
     Author URI: http://www.WordPressPinterestPlugin.com    
     /*============================================================================================================ */    
     function sn_activate() {
@@ -57,7 +57,7 @@
             $pindiv = '<div class="sn_pinterest">';
             $pinurl = '<a href="http://pinterest.com/pin/create/button/?url='.$posturl.'&media=';
             $pindescription = '&description='.urlencode(get_the_title());
-            $pinfinish = '" class="sn_pin"></a>';
+            $pinfinish = '" target="_blank" class="sn_pin"></a>';
             $pinend = '</div>';
             $pattern = '/<img(.*?)src="(.*?).(bmp|gif|jpeg|jpg|png)"(.*?) \/>/i';        
             $replacement = $pindiv.$pinurl.'$2.$3'.$pindescription.$pinfinish.'<img$1src="$2.$3" $4 />'.$pinend;
@@ -80,7 +80,7 @@
                     $random=rand();
                     $pindiv = '<div class="sn_pinterest">';
                     $pinurl = '<a href="javascript:void(0)"';            
-                    $pinfinish = '" class="sn_pin" onclick="show(\''.$random.'\')"></a>';
+                    $pinfinish = '" target="_blank" class="sn_pin test" onclick="show(\''.$random.'\')"></a>';
                     $pinend = '<div style="display: none;font-family: "helvetica neue",arial,sans-serif;
                     font-size: 20px; line-height:125%">
                     <div id="'.$random.'">                    
@@ -148,7 +148,7 @@
             }     
         }        
     ?>
-    <h2>Connect Pinterest to <a href="http://SuccessNexus.com" target="_blank">SuccessNexus.com</a></h2>
+    <h2>Connect Pinterest to <a href="http://Promotioner.com" target="_blank">Promotioner.com</a></h2>
     <form method="post" action="">
         <table>
             <?php
@@ -161,19 +161,19 @@
                 else
                 {
                 ?>
-                <tr><td><input type="checkbox" name="connect"></td><td>Connect to Successnexus(optional)</td></tr>                    
+                <tr><td><input type="checkbox" name="connect"></td><td>Connect to Promotioner(optional)</td></tr>                    
                 <?    
                 }
             ?>            
             <tr><td><input type="submit" value="Submit"></td></tr>                    
         </table>               
     </form>
-    <p>If you use <a href="http://SuccessNexus.com">SuccessNexus.com's affiliate management software</a> to empower your readers to promote you, then you may want to activate this option.</p>
+    <p>If you use <a href="http://Promotioner.com">Promotioner.com's affiliate management software</a> to empower your readers to promote you, then you may want to activate this option.</p>
 
     <p>Once activated, whenever your readers click on the "Pin it" button, it will ask for their email address before it pins the image to their Pinterest board. It will hyperlink the pinned image to their affiliate URL. So that when their referrals buy from you, they earn a commission.</p>
 
-    <p>Note: for this functionality to work, you should already have activated the SuccessNexus.com WordPress plugin. Or manually copy-pasted the SuccessNexus.com javascript tracking code to your theme.</p>
-    <p><a href="http://successnexus.com/buy-us-a-beer/" target="_blank"><img src="<?php echo plugins_url( 'icon_beer.gif', __FILE__ )?>" alt=""></a> This plugin is beerware. Please <a href="http://successnexus.com/buy-us-a-beer/" target="_blank">buy us a beer</a> and support this plugin.
+    <p>Note: for this functionality to work, you should already have activated the Promotioner.com WordPress plugin. Or manually copy-pasted the Promotioner.com javascript tracking code to your theme.</p>
+    <p><a href="http://Promotioner.com/buy-us-a-beer/" target="_blank"><img src="<?php echo plugins_url( 'icon_beer.gif', __FILE__ )?>" alt=""></a> This plugin is beerware. Please <a href="http://promotioner.com/buy-us-a-beer/" target="_blank">buy us a beer</a> and support this plugin.
         (Suggested: $3 a beer or $7.5 for a pitcher)</p>
     <?    
     }    
